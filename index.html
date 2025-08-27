@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section id="display">0</section>
+
+        <section class="buttons">
+
+            <section class="buttons-lines">
+                <button class="button double" onclick="clearDisplay()">C</button>
+                <button class="button" onclick="backspace()">&larr;</button>
+                <button class="button special" onclick="handleOperador('÷')">&divide;</button>
+            </section>
+
+            <section class="buttons-lines">
+                <button class="button" onclick="add(7)">7</button>
+                <button class="button" onclick="add(8)">8</button>
+                <button class="button" onclick="add(9)">9</button>
+                <button class="button special" onclick="handleOperador('*')">&times;</button>
+            </section>
+
+            <section class="buttons-lines">
+                <button class="button" onclick="add(4)">4</button>
+                <button class="button" onclick="add(5)">5</button>
+                <button class="button" onclick="add(6)">6</button>
+                <button class="button special" onclick="handleOperador('-')">&minus;</button>
+            </section>
+
+            <section class="buttons-lines">
+                <button class="button" onclick="add(1)">1</button>
+                <button class="button" onclick="add(2)">2</button>
+                <button class="button" onclick="add(3)">3</button>
+                <button class="button special" onclick="handleOperador('+')">&plus;</button>
+            </section>
+
+            <section class="buttons-lines">
+                <button class="button triple" onclick="add(0)">0</button>
+                <button class="button special" onclick="result()">&equals;</button>
+            </section>
+            
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
